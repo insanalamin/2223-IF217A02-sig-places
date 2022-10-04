@@ -27,3 +27,10 @@ Koordinat | geom
 2. Admin
   1. Input data
   2. List data : View , Delete 
+
+## Web Service
+1. GET /places?type=geojson : Melihat seluruh tempat dalam format GeoJSON
+2. GET /places : Melihat seluruh tempat
+3. POST /places : Menambah tempat baru
+4. GET /places/{places_id} : Melihat tempat berdasarkan ID
+5. DELETE /places/{places_id} : Menghapus tempat berdasarkan ID
