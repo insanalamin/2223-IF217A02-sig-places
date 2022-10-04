@@ -1,0 +1,13 @@
+{
+"type": "FeatureCollection",
+"name": "TitikPariwisata",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "id": 1, "nama": "UIN Sunan Gunung Djati Bandung", "kategori": "kampus", "alamat": "Jalan AH. Nasution", "rating": 89 }, "geometry": { "type": "Point", "coordinates": [ 107.717890502897959, -6.931469733762975 ] } },
+{ "type": "Feature", "properties": { "id": 2, "nama": "Kostan si Insan", "kategori": "kos", "alamat": "Jalan Cilengkrang", "rating": 3 }, "geometry": { "type": "Point", "coordinates": [ 107.714082624139436, -6.927980637862828 ] } },
+{ "type": "Feature", "properties": { "id": 3, "nama": "Borma Supermarket", "kategori": "toserba", "alamat": "Jalan AH Nasution", "rating": 114 }, "geometry": { "type": "Point", "coordinates": [ 107.710439391472605, -6.926507580808599 ] } },
+{ "type": "Feature", "properties": { "id": 4, "nama": "Transmart", "kategori": "toserba", "alamat": "Jalan AH Nasution", "rating": 78 }, "geometry": { "type": "Point", "coordinates": [ 107.711329180989338, -6.925721132987731 ] } },
+{ "type": "Feature", "properties": { "id": 5, "nama": "Batu Kuda", "kategori": "wisata_alam", "alamat": "Gunung Manglayang", "rating": 63 }, "geometry": { "type": "Point", "coordinates": [ 107.740065178648877, -6.890048980827899 ] } },
+{ "type": "Feature", "properties": { "id": 6, "nama": "Camping Ground Manglayang", "kategori": "wisata_alam", "alamat": "Gunung Manglayang", "rating": 45 }, "geometry": { "type": "Point", "coordinates": [ 107.736926393582081, -6.885340803227701 ] } }
+]
+}
