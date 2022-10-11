@@ -3,19 +3,19 @@ const { Client } = require("pg")
 const app = express()
 const port = 3100
 
-const client = new Client({
-  user: 'postgres',
-  host: 'localhost',
-  database: 'postgres',
-  password: 'uinsgd',
-  port: 5444,
-})
-
 app.get('/', (req, res) => {
   res.send('Hello World!')
 })
 
 app.get('/places', (objekRequest, objekResponse) => {
+
+  const client = new Client({
+    user: 'postgres',
+    host: 'localhost',
+    database: 'postgres',
+    password: 'uinsgd',
+    port: 5444,
+  })
 
   client.connect(err => {
     if(err) throw err
