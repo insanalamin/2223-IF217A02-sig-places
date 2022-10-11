@@ -41,12 +41,14 @@ let placesLayer = new VectorLayer({
   })
 });
 
-fetch("http://localhost:5173/TitikPariwisata.geojson").then(
+fetch("http://localhost:3100/places").then(
   (response) => {
     return response.json()
   }
 ).then(
   (jsonResponse) => {
+
+    console.log("jsonResponse nya", jsonResponse)
     placesLayer.setSource(
       new VectorSource({
         features: new GeoJSON().readFeatures(jsonResponse),
