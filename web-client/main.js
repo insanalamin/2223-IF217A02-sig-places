@@ -41,7 +41,7 @@ let placesLayer = new VectorLayer({
   })
 });
 
-fetch("http://localhost:3100/places").then(
+fetch("http://localhost:3100/places?format=geojson").then(
   (response) => {
     return response.json()
   }
