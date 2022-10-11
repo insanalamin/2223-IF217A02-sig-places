@@ -51,9 +51,7 @@ app.get('/places', (objekRequest, objekResponse) => {
     ) features
     `, (erornyaDatabase, hasilDariDatabase) => {
 
-    objekResponse.json({
-      data: hasilDariDatabase.rows[0],
-    })  
+    objekResponse.json(hasilDariDatabase.rows[0]['jsonb_build_object'])  
   })
   
 })
