@@ -1,7 +1,12 @@
 const express = require('express')
 const { Client } = require("pg")
+const cors = require('cors');
 const app = express()
 const port = 3100
+
+app.use(cors({
+  origin: `*`,
+}))
 
 app.get('/', (req, res) => {
   res.send('Hello World!')
