@@ -57,6 +57,27 @@ fetch("http://localhost:3100/places?format=geojson").then(
   }
 )
 
+const thematicLayer = new VectorLayer({
+  source: new VectorSource({
+    // features: new GeoJSON().readFeatures(placesGeoJSON),
+  })
+})
+
+fetch("http://localhost:5173/bataskecjabar.geojson").then(
+  (response) => {
+    return response.json()
+  }
+).then(
+  (jsonResponse) => {
+
+    thematicLayer.setSource(
+      new VectorSource({
+        features: new GeoJSON().readFeatures(jsonResponse),
+      })
+    )
+  }
+)
+
 const map = new Map({
   target: 'map',
   layers: [
@@ -65,9 +86,10 @@ const map = new Map({
         url: `https://mt0.google.com/vt/lyrs=s&hl=en&x={x}&y={y}&z={z}`
       })
     }),
-    new TileLayer({
-      source: new OSM(),
-    }),
+    // new TileLayer({
+    //   source: new OSM(),
+    // }),
+    thematicLayer,
     placesLayer,
   ],
   view: new View({
