@@ -3,5 +3,5 @@ exports.connectionSettings = {
     host: 'localhost',
     database: 'postgres',
     password: 'uinsgd',
-    port: 5444,
+    port: 5432,
 }
