@@ -13,9 +13,9 @@ app.get('/', (req, res) => {
   res.send('Hello World!')
 })
 
-app.get('/places', placesGET)
+app.get('/places', express.json(), placesGET)
 
-app.post('/places', placesPOST)
+app.post('/places', express.json(), placesPOST)
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
